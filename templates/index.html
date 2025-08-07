@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Heart Disease Prediction</h2>
+        <form action="/predict" method="post">
+            <label>Age:</label>
+            <input type="text" name="f1" required>
+
+            <label>Sex (1 = Male, 0 = Female):</label>
+            <input type="text" name="f2" required>
+
+            <label>BP:</label>
+            <input type="text" name="f3" required>
+
+            <label>Cholestrol:</label>
+            <input type="text" name="f4" required>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
